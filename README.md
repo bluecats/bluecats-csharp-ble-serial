@@ -5,7 +5,7 @@
 
 [NuGet Package](https://www.nuget.org/packages/BlueCats.Ble.Serial)
 
-This library is transport agnostic, allowing any serial device library to be used for communication with serial enabled beacons. This library simply handles the parsing and encoding of serial packets being sent and recieved over serial. .NET Standard 2.0 is has the highest level of platform compatibility at this time, supporting platforms:
+This library is transport agnostic, allowing any serial device library to be used for communication with serial enabled beacons. This library simply handles the parsing and encoding of serial packets being sent and recieved over serial. .NET Standard 2.0 is has the highest level of [platform compatibility](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) at this time, supporting platforms:
 * .NET Core 2.0
 * .NET Framework 4.6.1
 * Mono 5.4
