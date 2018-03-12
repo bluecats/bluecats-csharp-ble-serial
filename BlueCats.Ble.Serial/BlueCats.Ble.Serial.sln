@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueCats.Ble.Serial", "BlueCats.Ble.Serial\BlueCats.Ble.Serial.csproj", "{0681155A-C5E8-4342-AE98-3B54CB41028A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueCats.Ble.Serial", "BlueCats.Ble.Serial.csproj", "{7122D523-D828-497B-980A-2BDA0828FD22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0681155A-C5E8-4342-AE98-3B54CB41028A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0681155A-C5E8-4342-AE98-3B54CB41028A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0681155A-C5E8-4342-AE98-3B54CB41028A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0681155A-C5E8-4342-AE98-3B54CB41028A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7122D523-D828-497B-980A-2BDA0828FD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7122D523-D828-497B-980A-2BDA0828FD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7122D523-D828-497B-980A-2BDA0828FD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7122D523-D828-497B-980A-2BDA0828FD22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
