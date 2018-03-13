@@ -3,13 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Authors>BlueCats</Authors>
     <Company>BlueCats</Company>
     <Product>BlueCats BLE Serial Library</Product>
-    <Description>BlueCats serial library for BC0xx serial enabled beacons. Being transport agnostic, it allows any serial device library to be used. This library simply handles the parsing and encoding of serial packets being sent and recieved from the beacon.</Description>
+    <Description>.NET Standard 2.0 class library for communication with BC0xx serial enabled beacons. This library is transport agnostic, allowing any underlying serial device library. This simply handles the parsing and encoding of serial packets being sent and recieved over serial.</Description>
     <Copyright>BlueCats Inc. 2018</Copyright>
     <PackageTags>BlueCats, bluecats, serial, library, serial library, protocol, USB</PackageTags>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/bluecats/bluecats-csharp-ble-serial/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/bluecats/bluecats-csharp-ble-serial/blob/master/README.md</PackageProjectUrl>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/5086410</PackageIconUrl>
+    <RepositoryUrl>https://github.com/bluecats/bluecats-csharp-ble-serial/blob/master/README.md</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
 </Project>
