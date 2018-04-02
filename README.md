@@ -1,4 +1,4 @@
-# BlueCats BLE Serial Library for C#
+# BlueCats BLE Serial Library (.NET Standard 2.0)
 `.NET Standard 2.0` class library for communication with BC0xx serial enabled beacons
 
 [Serial API Documentation](https://bluecats.github.io/documentation/libraries/serial-Home)
