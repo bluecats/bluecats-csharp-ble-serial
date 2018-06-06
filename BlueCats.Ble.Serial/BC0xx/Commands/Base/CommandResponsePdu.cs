@@ -4,7 +4,7 @@ namespace BlueCats.Ble.Serial.BC0xx.Commands.Base {
 
     public class CommandResponsePdu : Pdu< CommandHeader > {
 
-        // Consts
+        // Constants
         protected const int CMD_RSP_CODE_LEN = 1;
 
         public CommandResponseCode ResponseCode { get; set; }

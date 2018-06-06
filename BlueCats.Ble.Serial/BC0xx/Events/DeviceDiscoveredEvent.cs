@@ -13,6 +13,7 @@ namespace BlueCats.Ble.Serial.BC0xx.Events {
             var payloadPos = 0;
             if ( PayloadData?.Length >= SerialProtocol.BLUETOOTH_ADDRESS_LEN ) {
                 BluetoothAddress = new byte[ SerialProtocol.BLUETOOTH_ADDRESS_LEN ];
+                // Bluetooth address comes over in Little-endian
                 Buffer.BlockCopy( PayloadData, payloadPos, BluetoothAddress, 0, SerialProtocol.BLUETOOTH_ADDRESS_LEN );
                 payloadPos += SerialProtocol.BLUETOOTH_ADDRESS_LEN;
             }
