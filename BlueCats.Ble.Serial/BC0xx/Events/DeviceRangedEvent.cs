@@ -13,10 +13,10 @@ namespace BlueCats.Ble.Serial.BC0xx.Events {
 
         public override void ParsePayload() {
             var payloadPos = 0;
-            if ( PayloadData?.Length >= Protocol.BLUETOOTH_ADDRESS_LEN ) {
-                BluetoothAddress = new byte[ Protocol.BLUETOOTH_ADDRESS_LEN ];
-                Buffer.BlockCopy( PayloadData, payloadPos, BluetoothAddress, 0, Protocol.BLUETOOTH_ADDRESS_LEN );
-                payloadPos += Protocol.BLUETOOTH_ADDRESS_LEN;
+            if ( PayloadData?.Length >= SerialProtocol.BLUETOOTH_ADDRESS_LEN ) {
+                BluetoothAddress = new byte[ SerialProtocol.BLUETOOTH_ADDRESS_LEN ];
+                Buffer.BlockCopy( PayloadData, payloadPos, BluetoothAddress, 0, SerialProtocol.BLUETOOTH_ADDRESS_LEN );
+                payloadPos += SerialProtocol.BLUETOOTH_ADDRESS_LEN;
             }
 
             if ( PayloadData?.Length >= ( payloadPos + 1 ) ) {

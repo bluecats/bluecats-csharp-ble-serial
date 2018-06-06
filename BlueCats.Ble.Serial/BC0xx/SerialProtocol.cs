@@ -5,7 +5,7 @@ using BlueCats.Ble.Serial.BC0xx.Events.Base;
 
 namespace BlueCats.Ble.Serial.BC0xx {
 
-    public class Protocol {
+    public class SerialProtocol {
 
         // Consts
         public const int DEFAULT_BAUD_RATE = 921600;
@@ -158,31 +158,31 @@ namespace BlueCats.Ble.Serial.BC0xx {
             return new CommandPdu( CommandCode.Meow );
         }
 
-        public CommandPdu CreateReadBluetoothAddressCommand() {
+        public static CommandPdu CreateReadBluetoothAddressCommand() {
             return new CommandPdu( CommandCode.ReadBluetoothAddress );
         }
 
-        public CommandPdu CreateReadFirmwareVersionCommand() {
+        public static CommandPdu CreateReadFirmwareVersionCommand() {
             return new CommandPdu( CommandCode.ReadFirmwareVersion );
         }
 
-        public CommandPdu CreateReadFirmwareUIDCommand() {
+        public static CommandPdu CreateReadFirmwareUIDCommand() {
             return new CommandPdu( CommandCode.ReadFirmwareUID );
         }
 
-        public CommandPdu CreateReadModelNumberCommand() {
+        public static CommandPdu CreateReadModelNumberCommand() {
             return new CommandPdu( CommandCode.ReadModelNumber );
         }
 
-        public CommandPdu CreateReadEncryptedStatusCommand() {
+        public static CommandPdu CreateReadEncryptedStatusCommand() {
             return new CommandPdu( CommandCode.ReadEncryptedStatus );
         }
 
-        public CommandPdu CreateReadStatusCommand() {
+        public static CommandPdu CreateReadStatusCommand() {
             return new CommandPdu( CommandCode.ReadStatus );
         }
 
-        public CommandPdu CreateStartScanCommand( byte discoveryMode = 3, ushort scanDuration = 100, ushort scanInterval = 53, ushort scanWindow = 53, byte scanResults = 5, bool discoveryActiveScan = false ) {
+        public static CommandPdu CreateStartScanCommand( byte discoveryMode = 3, ushort scanDuration = 100, ushort scanInterval = 53, ushort scanWindow = 53, byte scanResults = 5, bool discoveryActiveScan = false ) {
             var pdu = new CommandPdu( CommandCode.StartScan );
             pdu.PayloadData = new byte[ 9 ];
             pdu.PayloadData[ 0 ] = discoveryMode;
@@ -198,11 +198,11 @@ namespace BlueCats.Ble.Serial.BC0xx {
             return pdu;
         }
 
-        public CommandPdu CreateStopScanCommand() {
+        public static CommandPdu CreateStopScanCommand() {
             return new CommandPdu( CommandCode.StopScan );
         }
 
-        public CommandPdu CreateWriteFirmwareHeaderCommand( byte[] encryptedFirmwareHeader ) {
+        public static CommandPdu CreateWriteFirmwareHeaderCommand( byte[] encryptedFirmwareHeader ) {
             var pdu = new CommandPdu( CommandCode.WriteFirmwareHeader ) {
                 PayloadData = encryptedFirmwareHeader
             };
@@ -210,7 +210,7 @@ namespace BlueCats.Ble.Serial.BC0xx {
             return pdu;
         }
 
-        public CommandPdu CreateWriteFirmwareBlockCommand( byte[] encryptedFirmwareBlock ) {
+        public static CommandPdu CreateWriteFirmwareBlockCommand( byte[] encryptedFirmwareBlock ) {
             var pdu = new CommandPdu( CommandCode.WriteFirmwareBlock ) {
                 PayloadData = encryptedFirmwareBlock
             };
@@ -218,7 +218,7 @@ namespace BlueCats.Ble.Serial.BC0xx {
             return pdu;
         }
 
-        public CommandPdu CreateGoDfuCommand() {
+        public static CommandPdu CreateGoDfuCommand() {
             return new CommandPdu( CommandCode.GoDfu );
         }
 

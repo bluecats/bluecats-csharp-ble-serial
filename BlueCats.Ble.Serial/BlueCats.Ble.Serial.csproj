@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <Authors>BlueCats</Authors>
     <Company>BlueCats</Company>
     <Product>BlueCats BLE Serial Library</Product>
@@ -16,6 +16,9 @@
     <RepositoryUrl>https://github.com/bluecats/bluecats-csharp-ble-serial/blob/master/README.md</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>0.0.4.0</AssemblyVersion>
+    <FileVersion>0.0.4.0</FileVersion>
+    <PackageReleaseNotes>Code cleanup</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
